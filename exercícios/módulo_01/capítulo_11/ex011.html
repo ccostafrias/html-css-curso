@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <picture>
+        <source media="(max-width: 750px)" srcset="../../img/foto_p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="../../img/foto_m.png" type="image/png">
+        <img src="../../img/foto_g.png" alt="foto">
+    </picture>    
+    <h1>Áudiozinho hmmm</h1>
+    <audio preload="none" controls loop>
+        <source src="../../midia/happy-mistake.mp3" type="audio/mpeg">
+        <source src="../../midia/happy-mistake.mp3" type="audio/ogg">
+    </audio>
+</body>
+</html>
