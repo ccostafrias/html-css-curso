@@ -1,2 +1,9 @@
 @charset "UTF-8";
 
+section{
+    padding: 10px;
+    background-color: yellow;
+    width: 300px;
+    font-size: 2vw;
+    margin: 20px;
+}
