@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício de tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            border-collapse: collapse;
+            position: relative;
+        }
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+        }
+        td, th{
+            border: 1px solid black;
+            padding: 10px;
+        }
+        .cnome{
+            background-color: brown;
+            color: white;
+        }
+        tr > td:first-child, tr > th:first-child{
+            color: white;
+        }
+        tr > td:last-child, tr > th:last-child{
+            color: white;
+        }
+    </style>
+    <table>
+        <colgroup>
+            <col class="cnome">
+            <col class="csexo">
+            <col class="ccidade">
+            <col style="background-color: rgb(0, 0, 122);">
+        </colgroup>
+        <caption>Cadastro</caption>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+        </tr>
+        <tr>
+            <td>Ana Maria</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Jornalista</td>
+        </tr>
+        <tr>
+            <td>Rodrigo</td>
+            <td>M</td>
+            <td>32</td>
+            <td>Atleta</td>
+        </tr>
+        <tr>
+            <td>Joaquina</td>
+            <td>F</td>
+            <td>19</td>
+            <td>Estudante</td>
+        </tr>
+    </table>
+</head>
+<body>
+    
+</body>
+</html>
