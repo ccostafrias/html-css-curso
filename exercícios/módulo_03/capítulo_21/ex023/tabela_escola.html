@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filmes</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            height: 400px;
+            border-collapse: collapse;
+            position: relative;
+        }
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+        }
+        td, th{
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+            min-width: 110px;
+
+        }
+        .conteiner{
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <table>
+            <caption>Calendário</caption>
+            <thead>
+                <tr>
+                    <th>Horário</th>
+                    <th>SEGUNDA</th>
+                    <th>TERÇA</th>
+                    <th>QUARTA</th>
+                    <th>QUINTA</th>
+                    <th>SEXTA</th>
+                </tr>
+                <tr>
+                    <td>7:20 às 8:10</td>
+                    <td rowspan="2">Física</td>
+                    <td rowspan="2">História</td>
+                    <td rowspan="2">Física</td>
+                    <td rowspan="2">Biologia</td>
+                    <td rowspan="2">Geografia</td>
+                </tr>
+                <tr>
+                    <td>8:10 às 9:00</td>
+                </tr>
+                <tr>
+                    <td>9:00 às 9:55</td>
+                    <td>História</td>
+                    <td>Inglês</td>
+                    <td>Sociologia</td>
+                    <td>Geografia</td>
+                    <td>Biologia</td>
+                </tr>
+                <tr>
+                    <td>9:55 às 10:15</td>
+                    <td colspan="5">Intervalo</td>
+                </tr>
+                <tr>
+                    <td>10:15 às 11:00</td>
+                    <td>Sáude&Inovação</td>
+                    <td>Filosofia</td>
+                    <td>Inglês</td>
+                    <td rowspan="2">Matemática 2</td>
+                    <td rowspan="2">Matemática 1</td>
+                </tr>
+                <tr>
+                    <td>11:00 às 11:50</td>
+                    <td rowspan="2">Gramática</td>
+                    <td rowspan="2">Química 2</td>
+                    <td rowspan="2">Literatura</td>
+                </tr>
+                <tr>
+                    <td>11:50 às 12:40</td>
+                    <td>Gramática</td>
+                    <td>Ed. Física</td>
+                </tr>
+                <tr>
+                    <td>9:55 às 10:15</td>
+                    <td colspan="5">Intervalo</td>
+                </tr>
+                <tr>
+                    <td>13:10 às 14:00</td>
+                    <td>Química 1</td>
+                    <td>Saúde&Inovação</td>
+                    <td>Startup</td>
+                    <td>Startup</td>
+                    <td>Socioemocional</td>
+                </tr>
+            </thead>
+        </table>
+    </div>
+</body>
+</html>
