@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iframe com script</title>
+    <style>
+        body{
+            box-sizing: border-box;
+            width: 100%;
+            margin: 0;
+            padding: 50px 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            background-color: purple;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+        }
+        iframe{
+            width: 90%;
+            height: 500px;
+            border-radius: 10px;
+            border: 5px solid rgb(70, 0, 70);
+        }
+    </style>
+</head>
+<body>
+    <h1>Olha o script ó</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, possimus!</p>
+    <iframe src="pagina002.html" frameborder="0" referrerpolicy="no-referrer" sandbox="allow-scripts"></iframe>
+</body>
+</html>
