@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        textarea{
+            resize: vertical;
+        }
+    </style>
+    <title>Form sem input</title>
+</head>
+
+<body>
+    <h1>Riolámufor</h1>
+    <form action="" method="post">
+        <p>
+            <label for="lojas">Lojas poggers</label>
+            <select name="lojas" id="lojas">
+                <option value="" selected>--- Selecione ----</option>
+                <optgroup label="Poggers">
+                    <option value="americanas">Americanas</option>
+                    <option value="extra">Extra</option>
+                </optgroup>
+                <optgroup label="Noggers">
+                    <option value="assai">Assaí</option>
+                    <option value="dia">Dia</option>
+                </optgroup>
+            </select>
+        </p>
+
+        <p>
+            <label for="sonho">Qual o seu sonho?</label>
+            <input type="text" name="sonho" id="sonho" list="lista-sonhos">
+            <datalist id="lista-sonhos">
+                <option>Ser rico</option>
+                <option>Ser bonito</option>
+                <option>Ser inteligente</option>
+                <option>Ser forte</option>
+            </datalist>
+        </p>
+
+        <p>
+            <label for="msg">Quais suas motivações para tal sonho? </label><br>
+            <textarea name="msg" id="msg" cols="30" rows="10"></textarea>
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
+    </form>
+</body>
+
+</html>
