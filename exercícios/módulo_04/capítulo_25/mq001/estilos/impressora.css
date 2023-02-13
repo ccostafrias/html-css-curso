@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+*{
+    box-sizing: border-box;
+    margin: 10px;
+    padding: 10px;
+}
+
+html{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5em;
+    line-height: 1.5em;
+}
+
+nav{
+    display: none;
+}
+
+article::after{
+    content: 'Essa página é uma versão resumida própria para impressão.';
+    font-weight: bold;
+    font-size: .8em;
+}
