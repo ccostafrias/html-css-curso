@@ -6,8 +6,13 @@
     padding: 0;
 }
 
-html {
+html,
+body {
     font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: gainsboro;
 }
 
 p {
@@ -19,7 +24,7 @@ p {
 header {
     position: relative;
     background-color: crimson;
-    margin-bottom: 50px;
+
 }
 
 header h1{
@@ -43,13 +48,67 @@ nav li {
     color: white;
     border-radius: 5px;
     cursor: pointer;
+    transition: background .2s ease-in;
+}
+
+nav li:hover{
+    background-color: crimson;
+}
+
+.menu{
+    display: none;
+}
+
+#menu-check{
+    display: none;
 }
 
 main{
     padding: 20px 80px;
+    width: 95%;
+    max-width: 600px;
+    background-color: white;
+    margin: auto;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .3);
 }
 
 h2{
     font-size: 1.7em;
     margin-bottom: 20px;
+}
+
+@media (max-width: 720px){
+    main{
+        padding: 20px 40px;
+    }
+    nav ul{
+        display: none;
+    }
+    .menu{
+        display: block;
+        width: 100%;
+        text-align: center;
+        color: white;
+        background-color: gray;
+        padding: 15px;
+        font-size: 1.5em;
+        cursor: pointer;
+        transition: background .2s ease-in;
+    }
+    .menu:hover{
+        background-color: rgb(100, 100, 100);
+    }
+    nav:has(#menu-check:checked) ul{
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+    nav:has(#menu-check:checked) li{
+        border-radius: 0;
+        text-align: center;
+        font-size: 1.2em;
+        padding: 10px;
+    }
+
 }
