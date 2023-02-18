@@ -52,7 +52,7 @@ nav li {
 }
 
 nav li:hover{
-    background-color: crimson;
+    background-color: rgb(124, 32, 32);
 }
 
 .menu{
@@ -90,14 +90,17 @@ h2{
         width: 100%;
         text-align: center;
         color: white;
-        background-color: gray;
+        background-color: brown;
         padding: 15px;
         font-size: 1.5em;
         cursor: pointer;
         transition: background .2s ease-in;
     }
     .menu:hover{
-        background-color: rgb(100, 100, 100);
+        background-color: rgb(124, 32, 32);
+    }
+    .menu:has(#menu-check:checked){
+        background-color: rgb(124, 32, 32);
     }
     nav:has(#menu-check:checked) ul{
         display: flex;
@@ -109,6 +112,13 @@ h2{
         text-align: center;
         font-size: 1.2em;
         padding: 10px;
+        border-bottom: 5px solid rgb(124, 32, 32);
+    }
+    nav:has(#menu-check:checked) li:last-child{
+        border-bottom: none;
+    }
+    ion-icon{
+        transform: scale(1.2);
     }
 
 }
