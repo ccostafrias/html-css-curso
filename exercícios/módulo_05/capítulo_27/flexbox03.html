@@ -13,7 +13,11 @@
             flex-flow: row wrap;
             gap: 5px;
             padding: 10px;
+            height: 500px;
             background-color: orange;
+            justify-content: center;
+            align-items: center;
+            /* align-content: center; */
         }
 
         .item {
@@ -22,19 +26,34 @@
             border-radius: 5px;
             color: wheat;
             font-size: 2em;
-            flex: auto;
             text-align: center;
+            /* flex: auto; */
+        }
+
+        #item-A {
+            order: 5;
+            align-self: flex-start;
+        }
+
+        #item-B {
+            order: -2;
+            align-self: flex-end;
+        }
+
+        #item-C {
+            order: 0;
+            align-self: stretch;
         }
     </style>
 </head>
 <body>
     <h1>Olá</h1>
     <div class="container">
-        <div class="item">A é bacana</div>
-        <div class="item">B é bacana</div>
-        <div class="item">C é bacana</div>
-        <div class="item">D é bacana</div>
-        <div class="item">E é bacana</div>
+        <div class="item" id="item-A">A é bacana</div>
+        <div class="item" id="item-B">B é bacana</div>
+        <div class="item" id="item-C">C é bacana</div>
+        <!-- <div class="item">D é bacana</div>
+        <div class="item">E é bacana</div> -->
     </div>
     
 </body>
