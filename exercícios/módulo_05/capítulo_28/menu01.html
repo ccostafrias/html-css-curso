@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando flexbox</title>
+    <style>
+        body {
+            display: grid;
+            grid-template-rows: auto 1fr;
+            height: 100vh;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        .header {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
+            gap: 20px;
+            align-items: center;
+            padding: 20px;
+            background-color: gray;
+        }
+
+        .logo {
+            color: white;
+        }
+
+        .options {
+            display: flex;
+            flex-flow: row nowrap;
+            gap: 5px;
+        }
+
+        .option {
+            background-color: aliceblue;
+            padding: 5px;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: center;
+        }
+
+        .main {
+            background-color: antiquewhite;
+            padding: 10px;
+        }
+
+        .section {
+            max-width: 800px;
+            width: 80%;
+            margin: 0 auto;
+            background-color: white;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .section h1 {
+            margin-bottom: 10px;
+        }
+
+        .section p {
+            text-indent: 10px;
+            text-align: justify;
+            margin-bottom: 5px;
+        }
+
+        @media (max-width:500px) {
+            .header {
+                align-items: center;
+                flex-flow: column nowrap;
+                align-items: stretch;
+            }
+
+            .logo {
+                align-self: center;
+            }
+
+            .options {
+                flex-flow: column nowrap;
+                align-items: stretch;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1 class="logo">Logo</h1>
+        <nav>
+            <ul class="options">
+                <li class="option">Option 1</li>
+                <li class="option">Option 2</li>
+                <li class="option">Option 3</li>
+                <li class="option">Option 4</li>
+                <li class="option">Option 5</li>
+                <li class="option">Option 6</li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+        <section class="section">
+            <h1>Testando as fitas</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis expedita fugit voluptate corporis minus quo pariatur, eveniet ratione reprehenderit quibusdam labore. Ipsa ullam nam repellat cum voluptas pariatur voluptate soluta?</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam officia unde dolorum optio earum pariatur eligendi sit magni quaerat nemo distinctio veritatis suscipit quas delectus, ex voluptatem exercitationem nam quam.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta minima saepe tenetur, tempore obcaecati vitae iusto sunt eos nisi debitis porro nobis ea inventore, iste ut. Cumque nisi expedita minus.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia itaque neque recusandae blanditiis molestiae non excepturi minima quis ex, necessitatibus, illum corrupti! Alias iure optio nesciunt officiis! Atque, reiciendis illum?</p>
+        </section>
+    </main>
+    
+</body>
+</html>
