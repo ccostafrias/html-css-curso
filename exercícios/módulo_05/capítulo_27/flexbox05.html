@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        section, header {
+            padding: 1.2em;
+        }
+
+        img {
+            max-width: 100%;
+        }
+
+        .flex-section, .flex {
+            display: flex;
+            flex-direction: column;
+            gap: 2em;
+            background-color: gainsboro;
+        }
+
+        .text-media {
+            flex-flow: row wrap;
+        }
+
+        .media-text {
+            flex-flow: row wrap-reverse;
+        }
+
+        .content {
+            flex: 1 1 400px;
+        }
+
+        .media, .video {
+            flex: 1 0 300px;
+        }
+
+        .media > img {
+            display: block;
+            margin: 0 auto;
+        }
+
+        iframe {
+            aspect-ratio: 16/9;
+            width: 100%;
+        }
+
+        p {
+            text-align: justify;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Exemplo de conteúdo flexível</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit omnis similique esse explicabo inventore quaerat non delectus culpa illo officia blanditiis corporis voluptates, ratione, repellat commodi dolor! Dolorum, eos magnam!</p>
+    </header>
+    <main>
+        <section class="flex-section">
+            <article class="media-text flex">
+                <div class="content">
+                    <h2>Elemento Media -> Text</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum fuga expedita officiis, maiores cumque suscipit voluptatum nostrum pariatur illum reprehenderit, omnis alias perspiciatis accusamus earum provident veniam. Amet, labore deleniti!</p>
+                </div>
+                <div class="media">
+                    <img src="https://png.pngtree.com/png-vector/20220521/ourmid/pngtree-innovative-modern-innovation-technology-idea-png-image_4680677.png" alt="">
+                </div>
+            </article>
+            <article class="text-media flex">
+                <div class="content">
+                    <h2>Elemento Text -> Media</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia itaque dolorem recusandae, voluptate eveniet cum mollitia, eum error dolor exercitationem voluptatem, laboriosam in possimus maiores placeat maxime? Cum, itaque modi?</p>
+                </div>
+                <div class="video">
+                    <iframe src="https://www.youtube.com/embed/VBGMnFHRqcY?si=5vL3U43v0GZDEA9m" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </article>
+        </section>
+        <section class="non-flex">
+            <h2>Conteúdo normal</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum exercitationem quaerat rerum expedita voluptas assumenda culpa facilis ipsam laudantium inventore corporis tempora sed repellat aut repudiandae praesentium explicabo, tempore dicta.</p>
+        </section>
+    </main>
+    
+</body>
+</html>
